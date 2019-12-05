@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="Stylesheet" href="css.css">
+</head>
+<body>
+    <form action="https://formspree.io/krystiantryba123@gmail.com" method="POST" autocomplete="on">
+        <p class="formx">A Simpe Form</p>
+        <p class="formx2">Form Fundamentals</p>
+        <fieldset>
+            <legend>Cusomer Info</legend><br>
+            Name: <input type="text" required placeholder="Enter your name" name="fname" autofocus><br><br>
+            Telephone: <input type="tel" placeholder="Pattern: 1-234-567-8910" required name="tel" pattern="[1]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+            Email address: <input type="email" name="mail" placeholder="Enter your address" required> <br>
+        </fieldset>
+        <fieldset>
+                <legend>Books</legend><br>
+         <label for="book"></label>
+            <input list="booklist" id="book" name="ksiązki" />
+                    
+         <datalist id="booklist">
+             <option value="Book a">
+             <option value="Book b">
+             <option value="Book c">
+             <option value="Book d">
+             <option value="Book f">
+          </datalist>
+                
+            Quantity(Maximum 5):
+            <select name="ilsc" id="ilosc" >
+                <option value="jeden">1</option>
+                <option value="dwa">2</option>
+                <option value="trzy">3</option>
+                <option value="cztery">4</option>
+                <option value="pięć">5</option>
+
+            </select>
+            
+        </fieldset>
+        <input type="submit" value="Submit" >
+    </form>
+</body>
+</html>
